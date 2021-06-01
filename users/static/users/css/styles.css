@@ -1,0 +1,32 @@
+.register-parent
+{
+    display: grid;
+    justify-content: center;
+}
+
+.register-heading
+{
+    text-align: center;
+    font-size: 50px;
+}
+
+#already-account
+{
+    margin-top: 10px;
+}
+
+#submit-parent
+{
+    display: grid;
+    justify-content: center;
+}
+
+.submit
+{
+    place-items: centre;
+    border-radius: 10px;
+}
+
+.submit:hover{
+    background: rgba(0, 0, 0, 0.397);
+}

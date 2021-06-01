@@ -1,0 +1,10 @@
+{%extends "users/base.html"%}
+
+{%block title%}
+    <title>Home</title>
+{%endblock%}
+
+{%block content%}
+    <span> Welcome </span>
+    <a href="{%url 'users:logout' %}"> Logout </a>
+{%endblock%}
