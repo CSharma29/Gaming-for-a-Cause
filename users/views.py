@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.http.response import HttpResponse, HttpResponseRedirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
-from django.views.generic import View, ListView
+from django.views.generic import View, ListView, TemplateView
 from django.urls import reverse_lazy
 from .forms import userRegistrationForm
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -15,6 +15,9 @@ class home(LoginRequiredMixin, ListView):
     raise_exception = True
     template_name = 'users/home.html'
     queryset = game_post.objects.all()
+
+class profile(LoginRequiredMixin, TemplateView):
+    template_name = "users/profile.html"
 
 
 def register(request):
